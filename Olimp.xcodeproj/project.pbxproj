@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4A7D27DE22E8A5AC0074A5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D27DD22E8A5AC0074A5EF /* AppDelegate.swift */; };
-		4A7D27E022E8A5AC0074A5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D27DF22E8A5AC0074A5EF /* ViewController.swift */; };
 		4A7D27E322E8A5AC0074A5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D27E122E8A5AC0074A5EF /* Main.storyboard */; };
 		4A7D27E522E8A5AF0074A5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D27E422E8A5AF0074A5EF /* Assets.xcassets */; };
 		4A7D27E822E8A5AF0074A5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D27E622E8A5AF0074A5EF /* LaunchScreen.storyboard */; };
+		4A7D27F022E8A6170074A5EF /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D27EF22E8A6170074A5EF /* ConverterViewController.swift */; };
+		4A7D27F522E8A7220074A5EF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D27F322E8A7220074A5EF /* CustomTableViewCell.swift */; };
+		4A7D27F622E8A7220074A5EF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7D27F422E8A7220074A5EF /* CustomTableViewCell.xib */; };
+		4A7D27F922E8AA880074A5EF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D27F822E8AA880074A5EF /* DataManager.swift */; };
+		4A7D27FB22E8AB290074A5EF /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7D27FA22E8AB290074A5EF /* DataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A7D27DA22E8A5AC0074A5EF /* Olimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7D27DD22E8A5AC0074A5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A7D27DF22E8A5AC0074A5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A7D27E222E8A5AC0074A5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7D27E422E8A5AF0074A5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7D27E722E8A5AF0074A5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A7D27E922E8A5AF0074A5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A7D27EF22E8A6170074A5EF /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		4A7D27F322E8A7220074A5EF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		4A7D27F422E8A7220074A5EF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		4A7D27F822E8AA880074A5EF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4A7D27FA22E8AB290074A5EF /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		4A7D27DC22E8A5AC0074A5EF /* Olimp */ = {
 			isa = PBXGroup;
 			children = (
+				4A7D27F722E8AA760074A5EF /* Class */,
+				4A7D27F222E8A6480074A5EF /* Cell */,
+				4A7D27F122E8A62D0074A5EF /* Controllers */,
 				4A7D27DD22E8A5AC0074A5EF /* AppDelegate.swift */,
-				4A7D27DF22E8A5AC0074A5EF /* ViewController.swift */,
 				4A7D27E122E8A5AC0074A5EF /* Main.storyboard */,
 				4A7D27E422E8A5AF0074A5EF /* Assets.xcassets */,
 				4A7D27E622E8A5AF0074A5EF /* LaunchScreen.storyboard */,
 				4A7D27E922E8A5AF0074A5EF /* Info.plist */,
 			);
 			path = Olimp;
+			sourceTree = "<group>";
+		};
+		4A7D27F122E8A62D0074A5EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D27EF22E8A6170074A5EF /* ConverterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A7D27F222E8A6480074A5EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D27F322E8A7220074A5EF /* CustomTableViewCell.swift */,
+				4A7D27F422E8A7220074A5EF /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4A7D27F722E8AA760074A5EF /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4A7D27F822E8AA880074A5EF /* DataManager.swift */,
+				4A7D27FA22E8AB290074A5EF /* DataLoader.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +160,7 @@
 			files = (
 				4A7D27E822E8A5AF0074A5EF /* LaunchScreen.storyboard in Resources */,
 				4A7D27E522E8A5AF0074A5EF /* Assets.xcassets in Resources */,
+				4A7D27F622E8A7220074A5EF /* CustomTableViewCell.xib in Resources */,
 				4A7D27E322E8A5AC0074A5EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A7D27E022E8A5AC0074A5EF /* ViewController.swift in Sources */,
+				4A7D27FB22E8AB290074A5EF /* DataLoader.swift in Sources */,
+				4A7D27F522E8A7220074A5EF /* CustomTableViewCell.swift in Sources */,
+				4A7D27F922E8AA880074A5EF /* DataManager.swift in Sources */,
 				4A7D27DE22E8A5AC0074A5EF /* AppDelegate.swift in Sources */,
+				4A7D27F022E8A6170074A5EF /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
