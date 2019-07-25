@@ -65,9 +65,7 @@ class ConverterViewController: UITableViewController, UITextFieldDelegate {
     @objc private func updateRatesDataDic(){
         dataManager.getDataDic { (isSuccess) in
             if isSuccess{
-                DispatchQueue.main.async {
-                    self.reloadRows()
-                }
+                self.reloadRows()
             }
         }
     }
@@ -117,8 +115,6 @@ class ConverterViewController: UITableViewController, UITextFieldDelegate {
                 }
             }
         }
-        
-        
     }
     
     private func reloadRows(){

@@ -57,8 +57,8 @@ class DataManager {
     }
     
     func setEuro(newValue: Float, name: String, _ callback: @escaping (Bool) -> Void){
+        self.euroValue = newValue
         if self.euroName != name{
-            self.euroValue = newValue
             self.euroName = name
             self.currenciesValueDic[name] = newValue
             getDataDic { (isSucccess) in
@@ -66,7 +66,6 @@ class DataManager {
             }
         }
         else{
-            self.euroValue = newValue
             self.ratesDic[name] = 1.0
             for el in self.ratesDic{
                 currenciesValueDic[el.key] = self.euroValue * el.value
